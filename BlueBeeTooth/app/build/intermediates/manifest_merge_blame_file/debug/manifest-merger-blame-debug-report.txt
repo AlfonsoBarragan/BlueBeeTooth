@@ -1,0 +1,41 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="es.esi.techlab.bluebeetooth"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+11-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:4:5-74
+11-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:4:22-71
+12    <uses-permission android:name="android.permission.BLUETOOTH" />
+12-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:5:5-68
+12-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:5:22-65
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:6:5-81
+13-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:6:22-78
+14
+15    <application
+15-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:9:5-15:43
+16        android:allowBackup="true"
+16-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:10:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.1.0] C:\Users\Alfonso\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:11:9-43
+20        android:label="@string/app_name"
+20-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:12:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:13:9-54
+22        android:supportsRtl="true"
+22-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:14:9-35
+23        android:theme="@style/AppTheme" />
+23-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:15:9-40
+24
+25</manifest>
