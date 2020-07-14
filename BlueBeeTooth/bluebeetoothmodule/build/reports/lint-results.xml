@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 3.5.3">
+
+    <issue
+        id="GetInstance"
+        severity="Warning"
+        message="ECB encryption mode should not be used"
+        category="Security"
+        priority="9"
+        summary="Cipher.getInstance with ECB"
+        explanation="`Cipher#getInstance` should not be called with ECB as the cipher mode or without setting the cipher mode because the default mode on android is ECB, which is insecure."
+        errorLine1="                            Cipher cipher = Cipher.getInstance(&quot;AES/ECB/NoPadding&quot;);"
+        errorLine2="                                                               ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\bluebeetoothmodule\src\main\java\es\esi\techlab\bluebeetoothmodule\MiBand.java"
+            line="419"
+            column="64"/>
+    </issue>
+
+    <issue
+        id="GetInstance"
+        severity="Warning"
+        message="ECB encryption mode should not be used"
+        category="Security"
+        priority="9"
+        summary="Cipher.getInstance with ECB"
+        explanation="`Cipher#getInstance` should not be called with ECB as the cipher mode or without setting the cipher mode because the default mode on android is ECB, which is insecure."
+        errorLine1="                            Cipher cipher = Cipher.getInstance(&quot;AES/ECB/NoPadding&quot;);"
+        errorLine2="                                                               ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\bluebeetoothmodule\src\main\java\es\esi\techlab\bluebeetoothmodule\MiBand.java"
+            line="432"
+            column="64"/>
+    </issue>
+
+</issues>

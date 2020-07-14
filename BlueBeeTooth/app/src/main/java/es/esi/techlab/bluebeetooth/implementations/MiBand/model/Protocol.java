@@ -1,10 +1,12 @@
 package es.esi.techlab.bluebeetooth.implementations.MiBand.model;
 
+import es.esi.techlab.bluebeetooth.model.ProtocolBase;
+
 /**
  * Defines values for accessing data and controlling band
  *
  */
-public final class Protocol {
+public final class Protocol implements ProtocolBase {
 
     //miBand 2/3:
     public static final byte[] PAIR = {0x01,0x00,0x30,0x31,0x32,0x33,0x34,0x35,0x36,0x37,0x38,0x39,0x40,0x41,0x42,0x43,0x44,0x45};

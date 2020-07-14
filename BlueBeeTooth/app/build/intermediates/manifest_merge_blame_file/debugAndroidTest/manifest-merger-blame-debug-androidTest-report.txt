@@ -3,31 +3,56 @@
 3    package="es.esi.techlab.bluebeetooth.test" >
 4
 5    <uses-sdk
-5-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108145783477299584.xml:5:5-74
+5-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4189335130853401615.xml:5:5-74
 6        android:minSdkVersion="21"
-6-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108145783477299584.xml:5:15-41
+6-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4189335130853401615.xml:5:15-41
 7        android:targetSdkVersion="29" />
-7-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108145783477299584.xml:5:42-71
+7-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4189335130853401615.xml:5:42-71
 8
 9    <instrumentation
-9-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108145783477299584.xml:11:5-15:77
+9-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4189335130853401615.xml:11:5-15:82
 10        android:name="androidx.test.runner.AndroidJUnitRunner"
-10-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108145783477299584.xml:11:22-76
+10-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4189335130853401615.xml:11:22-76
 11        android:functionalTest="false"
-11-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108145783477299584.xml:14:22-52
+11-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4189335130853401615.xml:14:22-52
 12        android:handleProfiling="false"
-12-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108145783477299584.xml:13:22-53
-13        android:label="Tests for es.esi.techlab.bluebeetooth"
-13-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108145783477299584.xml:15:22-75
-14        android:targetPackage="es.esi.techlab.bluebeetooth" />
-14-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108145783477299584.xml:12:22-73
+12-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4189335130853401615.xml:13:22-53
+13        android:label="Tests for es.esi.techlab.bluebeetooth.test"
+13-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4189335130853401615.xml:15:22-80
+14        android:targetPackage="es.esi.techlab.bluebeetooth.test" />
+14-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4189335130853401615.xml:12:22-78
 15
-16    <application android:debuggable="true" >
-16-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108145783477299584.xml:7:5-9:19
-16-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108145783477299584.xml:7:18-43
-17        <uses-library android:name="android.test.runner" />
-17-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108145783477299584.xml:8:9-60
-17-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108145783477299584.xml:8:23-57
-18    </application>
+16    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+16-->[__tested_artifact__::app] C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-74
+16-->[__tested_artifact__::app] C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-71
+17    <uses-permission android:name="android.permission.BLUETOOTH" />
+17-->[__tested_artifact__::app] C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-68
+17-->[__tested_artifact__::app] C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-65
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+18-->[__tested_artifact__::app] C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-81
+18-->[__tested_artifact__::app] C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:22-78
 19
-20</manifest>
+20    <application
+20-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4189335130853401615.xml:7:5-9:19
+21        android:allowBackup="true"
+21-->[__tested_artifact__::app] C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.1.0] C:\Users\Alfonso\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
+23        android:debuggable="true"
+23-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4189335130853401615.xml:7:18-43
+24        android:icon="@mipmap/ic_launcher"
+24-->[__tested_artifact__::app] C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-43
+25        android:label="@string/app_name"
+25-->[__tested_artifact__::app] C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->[__tested_artifact__::app] C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:9-54
+27        android:supportsRtl="true"
+27-->[__tested_artifact__::app] C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:9-35
+28        android:theme="@style/AppTheme" >
+28-->[__tested_artifact__::app] C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:9-40
+29        <uses-library android:name="android.test.runner" />
+29-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4189335130853401615.xml:8:9-60
+29-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4189335130853401615.xml:8:23-57
+30    </application>
+31
+32</manifest>

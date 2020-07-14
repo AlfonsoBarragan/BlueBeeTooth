@@ -24,18 +24,15 @@
 15-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:9:5-15:43
 16        android:allowBackup="true"
 16-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:10:9-35
-17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-17-->[androidx.core:core:1.1.0] C:\Users\Alfonso\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
-18        android:debuggable="true"
-19        android:icon="@mipmap/ic_launcher"
-19-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:11:9-43
-20        android:label="@string/app_name"
-20-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:12:9-41
-21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:13:9-54
-22        android:supportsRtl="true"
-22-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:14:9-35
-23        android:theme="@style/AppTheme" />
-23-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:15:9-40
-24
-25</manifest>
+17        android:icon="@mipmap/ic_launcher"
+17-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:11:9-43
+18        android:label="@string/app_name"
+18-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:12:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:13:9-54
+20        android:supportsRtl="true"
+20-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:14:9-35
+21        android:theme="@style/AppTheme" />
+21-->C:\Users\Alfonso\Documents\GitHub\BlueBeeTooth\BlueBeeTooth\app\src\main\AndroidManifest.xml:15:9-40
+22
+23</manifest>

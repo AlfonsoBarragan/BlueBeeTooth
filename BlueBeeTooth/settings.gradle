@@ -1,2 +1,2 @@
-include ':app'
+include ':bluebeetoothmodule'
 rootProject.name='BlueBeeTooth'

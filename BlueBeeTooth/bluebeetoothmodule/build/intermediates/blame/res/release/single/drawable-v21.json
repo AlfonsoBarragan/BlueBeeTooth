@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\Alfonso\\Documents\\GitHub\\BlueBeeTooth\\BlueBeeTooth\\bluebeetoothmodule\\build\\intermediates\\res\\merged\\release\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\Alfonso\\.gradle\\caches\\transforms-2\\files-2.1\\e9dab9c67c1ee3668e0bbf86c6d8cbd8\\core-1.1.0\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Alfonso\\Documents\\GitHub\\BlueBeeTooth\\BlueBeeTooth\\bluebeetoothmodule\\build\\intermediates\\res\\merged\\release\\drawable-v21\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\Alfonso\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-v21\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Alfonso\\Documents\\GitHub\\BlueBeeTooth\\BlueBeeTooth\\bluebeetoothmodule\\build\\intermediates\\res\\merged\\release\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Alfonso\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Alfonso\\Documents\\GitHub\\BlueBeeTooth\\BlueBeeTooth\\bluebeetoothmodule\\build\\intermediates\\res\\merged\\release\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\Alfonso\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Alfonso\\Documents\\GitHub\\BlueBeeTooth\\BlueBeeTooth\\bluebeetoothmodule\\build\\intermediates\\res\\merged\\release\\drawable-v21\\abc_list_divider_material.xml",
+        "source": "C:\\Users\\Alfonso\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-v21\\abc_list_divider_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Alfonso\\Documents\\GitHub\\BlueBeeTooth\\BlueBeeTooth\\bluebeetoothmodule\\build\\intermediates\\res\\merged\\release\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Alfonso\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    }
+]
