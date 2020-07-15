@@ -1,4 +1,4 @@
-package es.esi.techlab.bluebeetoothmodule.model;
+package es.esi.techlab.bluebeetoothmodule.MiBandImplementation.model;
 
 /**
  * Defines values for accessing data and controlling band

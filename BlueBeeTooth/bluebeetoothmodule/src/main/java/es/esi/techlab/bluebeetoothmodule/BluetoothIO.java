@@ -15,7 +15,6 @@ import java.util.HashMap;
 import java.util.UUID;
 
 import es.esi.techlab.bluebeetoothmodule.listenters.NotifyListener;
-import es.esi.techlab.bluebeetoothmodule.model.Profile;
 
 /**
  * <code>BluetoothIO</code> is the main class in order to make and receive the bluetooth communications
@@ -25,7 +24,7 @@ import es.esi.techlab.bluebeetoothmodule.model.Profile;
  * @see BluetoothGattCallback
  * @see BluetoothGatt
  */
-public final class BluetoothIO extends BluetoothGattCallback {
+public class BluetoothIO extends BluetoothGattCallback {
 
     private static final String TAG = "BluetoothIO";
 
@@ -154,80 +153,6 @@ public final class BluetoothIO extends BluetoothGattCallback {
         }
     }
 
-    /**
-     * Sets notification listener for specific service and specific characteristic
-     *
-     * @param serviceUUID      Service UUID
-     * @param characteristicId Characteristic UUID
-     * @param listener         New listener
-     */
-    public void setNotifyListener(UUID serviceUUID, UUID characteristicId, NotifyListener listener)  {
-
-        checkConnectionState();
-
-        BluetoothGattService service = bluetoothGatt.getService(serviceUUID);
-
-        if (service != null) {
-            BluetoothGattCharacteristic characteristic = service.getCharacteristic(characteristicId);
-            if (characteristic != null) {
-                bluetoothGatt.setCharacteristicNotification(characteristic, true);
-                BluetoothGattDescriptor descriptor = characteristic.getDescriptor(Profile.UUID_DESCRIPTOR_UPDATE_NOTIFICATION);
-                descriptor.setValue(BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE);
-
-                if (!bluetoothGatt.writeDescriptor(descriptor)) {
-                    notifyWithFail(serviceUUID, characteristicId, "BluetoothGattCharacteristic " + characteristicId + " does not exist");
-                } else {
-                    notifyListeners.put(characteristicId, listener);
-                }
-            } else {
-                notifyWithFail(serviceUUID, characteristicId, "BluetoothGattCharacteristic " + characteristicId + " does not exist");
-            }
-        } else {
-            notifyWithFail(serviceUUID, characteristicId, "BluetoothGattService " + serviceUUID + " does not exist");
-        }
-    }
-
-    /**
-     * Removes notification listener for the service and characteristic
-     *
-     * @param serviceUUID      Service UUID
-     * @param characteristicId Characteristic UUID
-     */
-    public void removeNotifyListener(UUID serviceUUID, UUID characteristicId) {
-
-        checkConnectionState();
-
-        BluetoothGattService service = bluetoothGatt.getService(serviceUUID);
-        if (service != null) {
-            BluetoothGattCharacteristic characteristic = service.getCharacteristic(characteristicId);
-            if (characteristic != null) {
-                bluetoothGatt.setCharacteristicNotification(characteristic, false);
-                BluetoothGattDescriptor descriptor = characteristic.getDescriptor(Profile.UUID_DESCRIPTOR_UPDATE_NOTIFICATION);
-                descriptor.setValue(BluetoothGattDescriptor.DISABLE_NOTIFICATION_VALUE);
-                bluetoothGatt.writeDescriptor(descriptor);
-                notifyListeners.remove(characteristicId);
-            } else {
-                notifyWithFail(serviceUUID, characteristicId, "BluetoothGattCharacteristic " + characteristicId + " does not exist");
-            }
-        } else {
-            notifyWithFail(serviceUUID, characteristicId, "BluetoothGattService " + serviceUUID + " does not exist");
-        }
-    }
-
-    @Override
-    public void onDescriptorWrite(BluetoothGatt gatt, BluetoothGattDescriptor descriptor, int status) {
-        super.onDescriptorWrite(gatt, descriptor, status);    // Ready for pairing/auth
-        if (descriptor.getCharacteristic().getUuid().equals(Profile.UUID_CHAR_PAIR)) {
-            notifyWithResult(descriptor.getCharacteristic());
-        }
-        if (descriptor.getCharacteristic().getUuid().equals(Profile.UUID_CHAR_ACTIVITY_DATA)) {
-            notifyWithResult(descriptor.getCharacteristic());
-        }
-        if (descriptor.getCharacteristic().getUuid().equals(Profile.UUID_CHAR_FETCH)) {
-            notifyWithResult(descriptor.getCharacteristic());
-        }
-    }
-
     @Override
     public void onCharacteristicChanged(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic) {
         super.onCharacteristicChanged(gatt, characteristic);
@@ -270,7 +195,7 @@ public final class BluetoothIO extends BluetoothGattCallback {
      *
      * @param data Result data
      */
-    private void notifyWithResult(BluetoothGattCharacteristic data) {
+    public void notifyWithResult(BluetoothGattCharacteristic data) {
         if (bluetoothListener != null && data != null) {
             try {
                 bluetoothListener.onResult(data);
@@ -300,7 +225,7 @@ public final class BluetoothIO extends BluetoothGattCallback {
      * @param characteristicId Characteristic ID
      * @param msg              Message
      */
-    private void notifyWithFail(UUID serviceUUID, UUID characteristicId, String msg) {
+    public void notifyWithFail(UUID serviceUUID, UUID characteristicId, String msg) {
         if (bluetoothListener != null) {
             bluetoothListener.onFail(serviceUUID, characteristicId, msg);
         }
@@ -312,7 +237,7 @@ public final class BluetoothIO extends BluetoothGattCallback {
      * @param errorCode Error code
      * @param msg       Message
      */
-    private void notifyWithFail(int errorCode, String msg) {
+    public void notifyWithFail(int errorCode, String msg) {
         if (bluetoothListener != null) {
             bluetoothListener.onFail(errorCode, msg);
         }
@@ -333,5 +258,16 @@ public final class BluetoothIO extends BluetoothGattCallback {
                 }
             }
         }
+    }
+    public BluetoothGatt getBluetoothGatt() {
+        return bluetoothGatt;
+    }
+
+    public BluetoothListener getBluetoothListener() {
+        return bluetoothListener;
+    }
+
+    public HashMap<UUID, NotifyListener> getNotifyListeners() {
+        return notifyListeners;
     }
 }

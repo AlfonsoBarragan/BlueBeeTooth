@@ -1,4 +1,4 @@
-package es.esi.techlab.bluebeetoothmodule.model;
+package es.esi.techlab.bluebeetoothmodule.MiBandImplementation.model;
 
 import java.sql.Timestamp;
 import java.util.HashMap;

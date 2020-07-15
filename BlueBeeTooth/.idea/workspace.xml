@@ -58,7 +58,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/ObserverWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
+            <state relative-caret-position="910">
               <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -76,57 +76,71 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/BluetoothListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1189">
+            <state relative-caret-position="280">
               <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/MiBand.java">
+        <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/MiBandImplementation/MiBand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-19494">
-              <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+            <state relative-caret-position="8447">
+              <caret line="625" column="32" selection-start-line="625" selection-start-column="32" selection-end-line="625" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3281#4852#0" expanded="true" />
-                <element signature="e#4851#4852#0" expanded="true" />
-                <element signature="e#5051#6056#0" expanded="true" />
-                <element signature="e#6055#6056#0" expanded="true" />
-                <element signature="e#6910#7220#0" expanded="true" />
-                <element signature="e#7219#7220#0" expanded="true" />
-                <element signature="e#7568#7818#0" expanded="true" />
-                <element signature="e#7817#7818#0" expanded="true" />
-                <element signature="e#7978#8239#0" expanded="true" />
-                <element signature="e#8238#8239#0" expanded="true" />
-                <element signature="e#8411#8679#0" expanded="true" />
-                <element signature="e#8678#8679#0" expanded="true" />
-                <element signature="e#8773#9478#0" expanded="true" />
-                <element signature="e#9477#9478#0" expanded="true" />
-                <element signature="e#9597#10312#0" expanded="true" />
-                <element signature="e#10311#10312#0" expanded="true" />
-                <element signature="e#11496#11758#0" expanded="true" />
-                <element signature="e#11757#11758#0" expanded="true" />
-                <element signature="e#11855#12279#0" expanded="true" />
-                <element signature="e#12278#12279#0" expanded="true" />
+                <element signature="e#11726#12150#0" expanded="true" />
+                <element signature="e#12149#12150#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/MiBandImplementation/BluetoothIOMiBand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1085">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1343#1344#0" expanded="true" />
+                <element signature="e#1374#1375#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/model/Profile.java">
+        <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/BluetoothIO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3149">
+            <state relative-caret-position="315">
+              <caret line="197" column="10" selection-start-line="197" selection-start-column="10" selection-end-line="197" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#9449#9450#0" expanded="true" />
+                <element signature="e#9485#9486#0" expanded="true" />
+                <element signature="e#9540#9541#0" expanded="true" />
+                <element signature="e#9580#9581#0" expanded="true" />
+                <element signature="e#9645#9646#0" expanded="true" />
+                <element signature="e#9683#9684#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/MiBandImplementation/model/Profile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="35">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/model/PhyActivity.java">
+        <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/MiBandImplementation/model/PhyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2799">
+            <state relative-caret-position="245">
               <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -136,31 +150,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/BluetoothIO.java">
+        <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/MiBandImplementation/model/Protocol.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-10534">
-              <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/model/Protocol.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1644">
+            <state relative-caret-position="35">
               <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="1295">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
             </state>
           </provider>
         </entry>
@@ -179,6 +181,7 @@
       <find>profile</find>
       <find>DES</find>
       <find>ProfileBase</find>
+      <find>BluetoothIOMiBand</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -200,7 +203,6 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/ObserverWrapper.java" />
         <option value="$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/model/ProfileBase.java" />
-        <option value="$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/BluetoothIO.java" />
         <option value="$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/MiBand/BluetoothIO.java" />
         <option value="$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/MiBand/model/Profile.java" />
         <option value="$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/MiBand/MiBand.java" />
@@ -209,6 +211,10 @@
         <option value="$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/MiBand.java" />
         <option value="$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/model/Protocol.java" />
         <option value="$PROJECT_DIR$/bluebeetoothmodule/build.gradle" />
+        <option value="$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/MiBandImplementation/BluetoothIO.java" />
+        <option value="$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/MiBandImplementation/MiBand.java" />
+        <option value="$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/BluetoothIO.java" />
+        <option value="$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/MiBandImplementation/BluetoothIOMiBand.java" />
       </list>
     </option>
   </component>
@@ -224,6 +230,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -256,6 +264,36 @@
               <item name="build" type="462c0819:PsiDirectoryNode" />
               <item name="outputs" type="462c0819:PsiDirectoryNode" />
               <item name="aar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlueBeeTooth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlueBeeTooth" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="bluebeetoothmodule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlueBeeTooth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlueBeeTooth" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="bluebeetoothmodule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlueBeeTooth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlueBeeTooth" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="bluebeetoothmodule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlueBeeTooth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlueBeeTooth" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="bluebeetoothmodule" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bluebeetoothmodule" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -307,14 +345,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../eMOVI/android" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -331,6 +367,7 @@
       <recent name="es.esi.techlab.bluebeetoothmodule" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="es.esi.techlab.bluebeetoothmodule.MiBandImplementation" />
       <recent name="es.esi.techlab.bluebeetoothmodule.MiBand" />
       <recent name="es.esi.techlab.bluebeetooth.listenters" />
     </key>
@@ -542,18 +579,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49721295" visible="true" weight="0.2771855" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4959893" visible="true" weight="0.2771855" />
       <window_info id="Structure" order="2" side_tool="true" />
-      <window_info id="Build Variants" order="3" sideWeight="0.50278705" side_tool="true" visible="true" weight="0.2771855" />
+      <window_info id="Build Variants" order="3" sideWeight="0.5040107" side_tool="true" visible="true" weight="0.2771855" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="5" />
       <window_info id="Resources Explorer" order="6" weight="0.32995737" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="0" weight="0.32998884" />
+      <window_info active="true" anchor="bottom" id="Run" order="0" visible="true" weight="0.16610925" />
       <window_info anchor="bottom" id="Logcat" order="1" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
@@ -561,11 +597,11 @@
       <window_info anchor="bottom" id="Terminal" order="5" weight="0.32998884" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50053304" side_tool="true" weight="0.67335564" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49946696" weight="0.67335564" />
+      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49946696" weight="0.22630993" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.14046822" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Gradle" order="2" visible="true" weight="0.22547974" />
+      <window_info anchor="right" id="Gradle" order="2" visible="true" weight="0.1641791" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Flutter Inspector" order="4" weight="0.32995737" />
       <window_info anchor="right" id="Flutter Outline" order="5" />
@@ -687,104 +723,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/model/ProtocolBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/model/ProfileBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="13" column="67" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/BluetoothIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2205">
-          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/model/PhyActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2799">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/model/Profile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3149">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/model/Protocol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1644">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/BluetoothIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10534">
-          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/BluetoothListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1189">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/MiBand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19494">
-          <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3281#4852#0" expanded="true" />
-            <element signature="e#4851#4852#0" expanded="true" />
-            <element signature="e#5051#6056#0" expanded="true" />
-            <element signature="e#6055#6056#0" expanded="true" />
-            <element signature="e#6910#7220#0" expanded="true" />
-            <element signature="e#7219#7220#0" expanded="true" />
-            <element signature="e#7568#7818#0" expanded="true" />
-            <element signature="e#7817#7818#0" expanded="true" />
-            <element signature="e#7978#8239#0" expanded="true" />
-            <element signature="e#8238#8239#0" expanded="true" />
-            <element signature="e#8411#8679#0" expanded="true" />
-            <element signature="e#8678#8679#0" expanded="true" />
-            <element signature="e#8773#9478#0" expanded="true" />
-            <element signature="e#9477#9478#0" expanded="true" />
-            <element signature="e#9597#10312#0" expanded="true" />
-            <element signature="e#10311#10312#0" expanded="true" />
-            <element signature="e#11496#11758#0" expanded="true" />
-            <element signature="e#11757#11758#0" expanded="true" />
-            <element signature="e#11855#12279#0" expanded="true" />
-            <element signature="e#12278#12279#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/model/ProtocolBase.java" />
+    <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/model/ProfileBase.java" />
     <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/ObserverWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
+        <state relative-caret-position="910">
           <caret line="34" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -796,10 +739,81 @@
       <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="android-manifest" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/BluetoothListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="1295">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/MiBandImplementation/model/Protocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/MiBandImplementation/model/Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/MiBandImplementation/model/PhyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/MiBandImplementation/MiBand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8447">
+          <caret line="625" column="32" selection-start-line="625" selection-start-column="32" selection-end-line="625" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#11726#12150#0" expanded="true" />
+            <element signature="e#12149#12150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/BluetoothIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="197" column="10" selection-start-line="197" selection-start-column="10" selection-end-line="197" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#9449#9450#0" expanded="true" />
+            <element signature="e#9485#9486#0" expanded="true" />
+            <element signature="e#9540#9541#0" expanded="true" />
+            <element signature="e#9580#9581#0" expanded="true" />
+            <element signature="e#9645#9646#0" expanded="true" />
+            <element signature="e#9683#9684#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bluebeetoothmodule/src/main/java/es/esi/techlab/bluebeetoothmodule/MiBandImplementation/BluetoothIOMiBand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1085">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="e#1374#1375#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

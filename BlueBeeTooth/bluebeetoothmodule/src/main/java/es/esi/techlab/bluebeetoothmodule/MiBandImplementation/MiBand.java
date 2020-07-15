@@ -1,4 +1,4 @@
-package es.esi.techlab.bluebeetoothmodule;
+package es.esi.techlab.bluebeetoothmodule.MiBandImplementation;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -25,15 +25,17 @@ import java.util.UUID;
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 
+import es.esi.techlab.bluebeetoothmodule.BluetoothListener;
+import es.esi.techlab.bluebeetoothmodule.ObserverWrapper;
 import es.esi.techlab.bluebeetoothmodule.listenters.NotifyListener;
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.subjects.PublishSubject;
 
-import es.esi.techlab.bluebeetoothmodule.model.Profile;
-import es.esi.techlab.bluebeetoothmodule.model.Protocol;
-
+import es.esi.techlab.bluebeetoothmodule.MiBandImplementation.model.Profile;
+import es.esi.techlab.bluebeetoothmodule.MiBandImplementation.model.Protocol;
+import es.esi.techlab.bluebeetoothmodule.MiBandImplementation.BluetoothIOMiBand;
 /**
  * <code>MiBand class</code> implements the observable pattern in order of communicate its with
  * the mobile phone.
@@ -44,7 +46,7 @@ public final class MiBand implements BluetoothListener {
     private static final String TAG = "miband-wearable";
 
     private final Context context;
-    private final BluetoothIO bluetoothIO;
+    private final BluetoothIOMiBand bluetoothIOMiBand;
 
     private PublishSubject<Boolean> connectionSubject;
 
@@ -62,7 +64,7 @@ public final class MiBand implements BluetoothListener {
 
     public MiBand(Context context, byte[] key) {
         this.context = context;
-        bluetoothIO = new BluetoothIO(this);
+        bluetoothIOMiBand = new BluetoothIOMiBand(this);
 
         connectionSubject = PublishSubject.create();
         pairSubject = PublishSubject.create();
@@ -178,7 +180,7 @@ public final class MiBand implements BluetoothListener {
             @Override
             public void subscribe(ObservableEmitter<Boolean> subscriber) throws Exception {
                 connectionSubject.subscribe(new ObserverWrapper<>(subscriber));
-                bluetoothIO.connect(context, device);
+                bluetoothIOMiBand.connect(context, device);
             }
         });
     }
@@ -189,7 +191,7 @@ public final class MiBand implements BluetoothListener {
      * @return Connected device or null, if device is not connected
      */
     public BluetoothDevice getDevice() {
-        return bluetoothIO.getConnectedDevice();
+        return bluetoothIOMiBand.getConnectedDevice();
     }
 
 
@@ -242,7 +244,7 @@ public final class MiBand implements BluetoothListener {
 
                 Log.d("DATE TO SET: ", String.valueOf(Arrays.toString(dateInBytes)));
 
-                bluetoothIO.writeCharacteristic(Profile.UUID_SERVICE_FETCH, Profile.UUID_CHAR_CURRENT_TIME, dateInBytes);
+                bluetoothIOMiBand.writeCharacteristic(Profile.UUID_SERVICE_FETCH, Profile.UUID_CHAR_CURRENT_TIME, dateInBytes);
             }
         });
     }
@@ -260,7 +262,7 @@ public final class MiBand implements BluetoothListener {
                 byte[] rqLastPck = ArrayUtils.addAll(Protocol.FETCH_1_ST, dateInBytes);
                 byte[] rqLastPckEnd = ArrayUtils.addAll(rqLastPck, Protocol.FETCH_1_END);
 
-                bluetoothIO.writeCharacteristic(Profile.UUID_SERVICE_FETCH, Profile.UUID_CHAR_FETCH, rqLastPckEnd);
+                bluetoothIOMiBand.writeCharacteristic(Profile.UUID_SERVICE_FETCH, Profile.UUID_CHAR_FETCH, rqLastPckEnd);
             }
         });
     }
@@ -300,7 +302,7 @@ public final class MiBand implements BluetoothListener {
             @Override
             public void subscribe(ObservableEmitter<Boolean> subscriber) throws Exception {
                 setHeartRateMeasure.subscribe(new ObserverWrapper<>(subscriber));
-                bluetoothIO.writeCharacteristic(Profile.UUID_SERVICE_HEARTRATE, Profile.UUID_CHAR_HEARTRATE, Protocol.COMMAND_SET_PERIODIC_HR_MEASUREMENT_INTERVAL);
+                bluetoothIOMiBand.writeCharacteristic(Profile.UUID_SERVICE_HEARTRATE, Profile.UUID_CHAR_HEARTRATE, Protocol.COMMAND_SET_PERIODIC_HR_MEASUREMENT_INTERVAL);
 
             }
         });
@@ -312,7 +314,7 @@ public final class MiBand implements BluetoothListener {
      * @param listener Listener
      */
     public void setPairingNotifyListener(NotifyListener listener) throws InterruptedException {
-        bluetoothIO.setNotifyListener(Profile.UUID_SERVICE_MILI, Profile.UUID_CHAR_PAIR, listener);
+        bluetoothIOMiBand.setNotifyListener(Profile.UUID_SERVICE_MILI, Profile.UUID_CHAR_PAIR, listener);
     }
 
     /**
@@ -321,7 +323,7 @@ public final class MiBand implements BluetoothListener {
      * @param listener Listener
      */
     public void setFetchingNotifyListener(NotifyListener listener) throws InterruptedException {
-        bluetoothIO.setNotifyListener(Profile.UUID_SERVICE_FETCH, Profile.UUID_CHAR_FETCH, listener);
+        bluetoothIOMiBand.setNotifyListener(Profile.UUID_SERVICE_FETCH, Profile.UUID_CHAR_FETCH, listener);
     }
 
     /**
@@ -330,7 +332,7 @@ public final class MiBand implements BluetoothListener {
      * @param listener Listener
      */
     public void setCharActivityNotifyListener(NotifyListener listener) throws InterruptedException {
-        bluetoothIO.setNotifyListener(Profile.UUID_SERVICE_FETCH, Profile.UUID_CHAR_ACTIVITY_DATA, listener);
+        bluetoothIOMiBand.setNotifyListener(Profile.UUID_SERVICE_FETCH, Profile.UUID_CHAR_ACTIVITY_DATA, listener);
     }
 
     /**
@@ -339,7 +341,7 @@ public final class MiBand implements BluetoothListener {
      * @param listener Listener
      */
     public void setTimeActivityNotifyListener(NotifyListener listener) throws InterruptedException {
-        bluetoothIO.setNotifyListener(Profile.UUID_SERVICE_FETCH, Profile.UUID_CHAR_CURRENT_TIME, listener);
+        bluetoothIOMiBand.setNotifyListener(Profile.UUID_SERVICE_FETCH, Profile.UUID_CHAR_CURRENT_TIME, listener);
     }
 
     /**
@@ -348,7 +350,7 @@ public final class MiBand implements BluetoothListener {
      * @param listener Listener
      */
     public void setHeartRateMeasureNotifyListener(NotifyListener listener) throws InterruptedException {
-        bluetoothIO.setNotifyListener(Profile.UUID_SERVICE_HEARTRATE, Profile.UUID_CHAR_HEARTRATE, listener);
+        bluetoothIOMiBand.setNotifyListener(Profile.UUID_SERVICE_HEARTRATE, Profile.UUID_CHAR_HEARTRATE, listener);
     }
 
     /**
@@ -371,7 +373,7 @@ public final class MiBand implements BluetoothListener {
      * @param listener Listener
      */
     public void setFetchingPastDataListener(NotifyListener listener) throws InterruptedException {
-        bluetoothIO.setNotifyListener(Profile.UUID_SERVICE_FETCH, Profile.UUID_CHAR_ACTIVITY_DATA, listener);
+        bluetoothIOMiBand.setNotifyListener(Profile.UUID_SERVICE_FETCH, Profile.UUID_CHAR_ACTIVITY_DATA, listener);
         Log.d("LISTENER FETCH", "SETTED LISTENER");
     }
 
@@ -397,10 +399,10 @@ public final class MiBand implements BluetoothListener {
 
                 if (pairRequested) { // After enabling pair notifications - write: {0x01,0x08, 128 default key}
                     if (miBandKey[0] == 0x00) {
-                        bluetoothIO.writeCharacteristic(Profile.UUID_SERVICE_MILI, Profile.UUID_CHAR_PAIR, Protocol.PAIR);
+                        bluetoothIOMiBand.writeCharacteristic(Profile.UUID_SERVICE_MILI, Profile.UUID_CHAR_PAIR, Protocol.PAIR);
                         pairRequested = false;
                     } else {
-                        bluetoothIO.writeCharacteristic(Profile.UUID_SERVICE_MILI, Profile.UUID_CHAR_PAIR, Protocol.PAIR_2);
+                        bluetoothIOMiBand.writeCharacteristic(Profile.UUID_SERVICE_MILI, Profile.UUID_CHAR_PAIR, Protocol.PAIR_2);
                         pairRequested = false;
                     }
                 }
@@ -409,7 +411,7 @@ public final class MiBand implements BluetoothListener {
                     Log.d(TAG, "Pair result " + Arrays.toString(characteristic.getValue()) + " - length: " + characteristic.getValue().length);
                     // Write demanding a device's generated random key {0x02,0x08}
 
-                    bluetoothIO.writeCharacteristic(Profile.UUID_SERVICE_MILI, Profile.UUID_CHAR_PAIR, Protocol.PAIR_2);
+                    bluetoothIOMiBand.writeCharacteristic(Profile.UUID_SERVICE_MILI, Profile.UUID_CHAR_PAIR, Protocol.PAIR_2);
 
                     // Notification received: {0x10,0x02,0x01, 16 bytes of device secret key} -> successfully second pairing phase
                 } else if (characteristic.getValue().length == 19 && characteristic.getValue()[0] == 16 && characteristic.getValue()[1] == 2 && characteristic.getValue()[2] == 1) {
@@ -422,7 +424,7 @@ public final class MiBand implements BluetoothListener {
                             byte[] bytes = cipher.doFinal(tmpValue);
                             byte[] rq = ArrayUtils.addAll(new byte[]{0x03, 0x00}, bytes);
 
-                            bluetoothIO.writeCharacteristic(Profile.UUID_SERVICE_MILI, Profile.UUID_CHAR_PAIR, rq);
+                            bluetoothIOMiBand.writeCharacteristic(Profile.UUID_SERVICE_MILI, Profile.UUID_CHAR_PAIR, rq);
                             miBandKey = tmpValue;
                             Log.d("Key to write: ", String.valueOf(rq));
 
@@ -435,7 +437,7 @@ public final class MiBand implements BluetoothListener {
                             byte[] bytes = cipher.doFinal(tmpValue);
                             byte[] rq = ArrayUtils.addAll(new byte[]{0x03, 0x00}, bytes);
 
-                            bluetoothIO.writeCharacteristic(Profile.UUID_SERVICE_MILI, Profile.UUID_CHAR_PAIR, rq);
+                            bluetoothIOMiBand.writeCharacteristic(Profile.UUID_SERVICE_MILI, Profile.UUID_CHAR_PAIR, rq);
 
                         }
                     } catch (Exception e) {
@@ -487,7 +489,7 @@ public final class MiBand implements BluetoothListener {
                 ByteBuffer buf = ByteBuffer.wrap(bYear);
                 buf.order(ByteOrder.LITTLE_ENDIAN);
 
-                bluetoothIO.writeCharacteristic(Profile.UUID_SERVICE_FETCH, Profile.UUID_CHAR_FETCH, Protocol.FETCH_PAST_DATA);
+                bluetoothIOMiBand.writeCharacteristic(Profile.UUID_SERVICE_FETCH, Profile.UUID_CHAR_FETCH, Protocol.FETCH_PAST_DATA);
                 startFetchingActivitySubject.onNext(true);
                 startFetchingActivitySubject.onComplete();
                 startFetchingActivitySubject = PublishSubject.create();
@@ -495,7 +497,7 @@ public final class MiBand implements BluetoothListener {
             } else if (characteristicId.equals(Profile.UUID_CHAR_FETCH) && characteristic.getValue() != null &&
                     (characteristic.getValue()[0] == 16) && (characteristic.getValue()[1] == 2) && (characteristic.getValue()[2] == 1)) {
                 Log.d("RECOVER PAST DATA", "CHAR_ACTIVITY LAST PACKAGE RECEIVED");
-                bluetoothIO.writeCharacteristic(Profile.UUID_SERVICE_FETCH, Profile.UUID_CHAR_FETCH, Protocol.FETCH_FLUSH_DATA);
+                bluetoothIOMiBand.writeCharacteristic(Profile.UUID_SERVICE_FETCH, Profile.UUID_CHAR_FETCH, Protocol.FETCH_FLUSH_DATA);
                 fetchingPastDataSubject.onNext(true);
                 fetchingPastDataSubject.onComplete();
                 fetchingPastDataSubject = PublishSubject.create();
@@ -559,7 +561,7 @@ public final class MiBand implements BluetoothListener {
     public void onFail(int errorCode, String msg) {
         Log.d(TAG, String.format("onFail: errorCode %d, message %s", errorCode, msg));
         switch (errorCode) {
-            case BluetoothIO.ERROR_CONNECTION_FAILED:
+            case BluetoothIOMiBand.ERROR_CONNECTION_FAILED:
                 connectionSubject.onError(new Exception("Establishing connection failed"));
                 connectionSubject = PublishSubject.create();
                 break;
@@ -620,7 +622,7 @@ public final class MiBand implements BluetoothListener {
         return this.miBandKey;
     }
 
-    public BluetoothIO getBluetoothIO() {
-        return bluetoothIO;
+    public BluetoothIOMiBand getBluetoothIO() {
+        return bluetoothIOMiBand;
     }
 }
