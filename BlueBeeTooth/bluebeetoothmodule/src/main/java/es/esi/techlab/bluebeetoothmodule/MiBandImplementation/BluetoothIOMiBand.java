@@ -111,42 +111,4 @@ public final class BluetoothIOMiBand extends BluetoothIO {
         }
     }
 
-    @Override
-    public void onCharacteristicChanged(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic) {
-        super.onCharacteristicChanged(gatt, characteristic);
-        Log.d("CHANGED_CHAR - Char: ", String.valueOf(characteristic.getUuid()) + " - value: " + Arrays.toString(characteristic.getValue()));
-        // Notify the change...
-        if (super.getNotifyListeners().containsKey(characteristic.getUuid())) {
-            super.getNotifyListeners().get(characteristic.getUuid()).onNotify(characteristic.getValue());
-            notifyWithResult(characteristic);
-        }
-    }
-
-    @Override
-    public void onCharacteristicWrite(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status) {
-        super.onCharacteristicWrite(gatt, characteristic, status);
-        if (BluetoothGatt.GATT_SUCCESS == status) {
-            Log.d("WRITE_CHAR", "Characteristic: " + String.valueOf(characteristic.getUuid() + " - Status: " + String.valueOf(status)));
-            notifyWithResult(characteristic);
-        } else {
-            UUID serviceId = characteristic.getService().getUuid();
-            UUID characteristicId = characteristic.getUuid();
-            notifyWithFail(serviceId, characteristicId, "onCharacteristicWrite fail");
-        }
-    }
-
-    @Override
-    public void onCharacteristicRead(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status) {
-        super.onCharacteristicRead(gatt, characteristic, status);
-        if (BluetoothGatt.GATT_SUCCESS == status) {
-            Log.d(TAG, "READ_CHAR - Char: " + String.valueOf(characteristic.getUuid()) + " - value: " + Arrays.toString(characteristic.getValue()));
-            super.notifyWithResult(characteristic);
-        } else {
-            UUID serviceId = characteristic.getService().getUuid();
-            UUID characteristicId = characteristic.getUuid();
-            super.notifyWithFail(serviceId, characteristicId, "onCharacteristicRead fail");
-        }
-    }
-
-
 }
