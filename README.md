@@ -18,8 +18,8 @@ A simple intercommunication between bluetooth devices and android smartphones li
 
 This module requires the next libraries in the build.gradle (module level) of the app that will use it:
 
-* io.reactivex.rxjava2:rxjava:2.2.16
-* org.apache.commons:commons-lang3:3.6
+* [Reactives.io](http://reactivex.io/)
+* [Apache Commons Lang](http://commons.apache.org/proper/commons-lang/)
 
 # Install proccess
 
