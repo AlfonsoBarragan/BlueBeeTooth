@@ -21,7 +21,7 @@ The install proccess will be as follows:
 * Download the actual release files (this will be an .arr file)
 * In Android Studio go to **File** >> **Project Structure**
 * Then click on the **+** icon, next selects **Import .JAR/.AAR Package**
-* Finally in your **build.gradle (at module level)** add the line **implementation project(':bluebeetoothmodule')** to the dependencies
+* Finally in your **build.gradle (at module level)** add the line **implementation project(':bluebeetoothmodule-release')** to the dependencies
 
 Now you are ready to begin bluetooth communication with your custom/third party devices :D!
 
