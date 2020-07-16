@@ -2,6 +2,14 @@
     <img src="resources/BlueBeeToothLogo.png">
 </h1>
 
+[![DOI](https://img.shields.io/badge/DOI-WIP-blueviolet)]()
+![Last release](https://img.shields.io/badge/Last%20release-MiBandFlower-1a295d)
+[![Package status](https://img.shields.io/badge/Package%20status-up%20to%20date!-blue)](https://pypi.org/project/pandas/)
+![Package version](https://img.shields.io/badge/pypi-v1.0.0-brightgreen)
+![Last commit](https://img.shields.io/github/last-commit/AlfonsoBarragan/Techdeck)
+![Coverage](https://img.shields.io/badge/Coverage-0%25-red)
+[![License](https://img.shields.io/badge/License-GPL-brightgreen)](https://github.com/pandas-dev/pandas/blob/master/LICENSE)
+
 A simple intercommunication between bluetooth devices and android smartphones library.
 
 * Eliminates the need to implements basic bluetooth operations like reading and writing characteristics, connection with devices, etc...
