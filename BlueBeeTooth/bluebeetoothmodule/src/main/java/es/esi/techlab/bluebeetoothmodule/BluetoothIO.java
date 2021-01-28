@@ -55,7 +55,7 @@ public class BluetoothIO extends BluetoothGattCallback {
      * @param device  Device to connect
      */
     public void connect(Context context, BluetoothDevice device) {
-        device.connectGatt(context, false, this);
+        device.connectGatt(context, true, this);
     }
 
     @Override
